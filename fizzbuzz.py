@@ -50,11 +50,11 @@ b = int(input("For multiples of what number shall we print 'Fizz'? "))
 c = int(input("For multiples of what number shall we print 'Buzz'? "))
 
 for i in range(1, a+1):
-    if i%(b*c)==0:
+    if i%b == 0 and i%c == 0:
         print('FizzBuzz')
-    elif i%b==0:
+    elif i%b == 0:
         print('Fizz')
-    elif i%c==0:
+    elif i%c == 0:
         print('Buzz')
     else:
         print(i)
